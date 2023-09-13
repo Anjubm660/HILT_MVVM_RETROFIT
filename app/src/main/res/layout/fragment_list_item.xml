@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".staff.StaffFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Left Side: Actor's Image -->
+        <ImageView
+            android:id="@+id/actorImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person" />
+
+        <!-- Right Side: Actor's Information -->
+
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actor Name :"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+            <TextView
+                android:id="@+id/actorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" John Doe"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth :"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+            <TextView
+                android:id="@+id/actorDateOfBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/1990"
+                android:textSize="18dp"/>
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender :"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    />
+            <TextView
+                android:id="@+id/actorGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" male"
+                android:textSize="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

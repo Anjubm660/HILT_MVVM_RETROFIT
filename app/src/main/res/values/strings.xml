@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HILT_MVVM_RETRO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gender">gender:</string>
+    <string name="text">text</string>
+    <string name="name">Name:</string>
+    <string name="actor">actor :</string>
+    <string name="alive">alive :</string>
+    <string name="dateofbirth">dateOfBirth :</string>
+</resources>
