@@ -1,0 +1,20 @@
+[
+  {
+    "actor": "Daniel Radcliffe",
+    "alive": true,
+     "ancestry" :"Half-Blood",
+     "dateOfBirth":"July 31, 1980",
+    "eyeColour": "Green",
+    "gender": "Male",
+    "hairColour": "Black",
+     "hogwartsStaff":false,
+    "hogwartsStudent" :true,
+     "house" :"Gryffindor",
+     "id" :12345,
+    "image": "https://example.com/harry_potter.jpg",
+     "name" :"Harry James Potter",
+    "patrons": "Stag",
+    "species": "Human",
+    "yearOfBirth": 1980
+  }
+]
