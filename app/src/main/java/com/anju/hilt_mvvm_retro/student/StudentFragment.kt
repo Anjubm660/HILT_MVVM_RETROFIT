@@ -17,7 +17,7 @@ import javax.inject.Inject
 class StudentFragment : Fragment() {
     private val viewModel: UsersDetailsViewModel by viewModels()
     private lateinit var binding: FragmentStudentBinding
-
+    var totalItemCount =  0
     @Inject
     lateinit var adapter: StudentAdapter
 
@@ -61,7 +61,7 @@ class StudentFragment : Fragment() {
                 super.onScrolled(recyclerView, dx, dy)
                 val layoutManager = recyclerView.layoutManager as LinearLayoutManager
                 val lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition()
-                val totalItemCount = layoutManager.itemCount
+                 totalItemCount = layoutManager.itemCount
 
                 // Check if the last item is visible and not already fetching data
                 if (lastVisibleItemPosition == totalItemCount - 1 && !viewModel.isFetchingData) {

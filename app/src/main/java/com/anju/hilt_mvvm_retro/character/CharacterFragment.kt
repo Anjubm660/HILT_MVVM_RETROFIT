@@ -18,6 +18,7 @@ class CharacterFragment : Fragment() {
 
     private val viewModel: UsersDetailsViewModel by viewModels()
     private lateinit var binding: FragmentCharacterBinding
+    var totalItemCount =  0
 
     @Inject
     lateinit var adapter: CharacterAdapter
@@ -59,7 +60,7 @@ class CharacterFragment : Fragment() {
                 super.onScrolled(recyclerView, dx, dy)
                 val layoutManager = recyclerView.layoutManager as LinearLayoutManager
                 val lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition()
-                val totalItemCount = layoutManager.itemCount
+                 totalItemCount = layoutManager.itemCount
 
                 // Check if the last item is visible and not already fetching data
                 if (lastVisibleItemPosition == totalItemCount - 1 && !viewModel.isFetchingData) {
